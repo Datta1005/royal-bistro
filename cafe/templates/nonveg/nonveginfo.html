@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Veg Burger</title>
+
+</head>
+<body>
+<nav class="navbar" style="background-color: #e3f2fd;">
+<h1 align="center"> Prize list </h1>
+{% if Burger_list %}
+<table border="2px" align="center">
+    <thead>
+<th> Burger </th>
+<th> prize </th>
+    </thead>
+{% for Burger in Burger_list %}
+<tr>
+    <td>{{Burger.Burger}}</td>
+    <td>{{Burger.prize}}</td>
+
+</tr>
+{% endfor %}
+</table>
+{%else%}
+{%endif%}
+</body>
+</html>

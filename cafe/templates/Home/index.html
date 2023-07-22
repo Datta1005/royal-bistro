@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+{% extends 'base.html'%}
+{% load static%}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{% block baseblock %}
+<h1> WELCOME TO "THE ROYAL BISTRO", </h1>
+<style>
+h1 {
+  background-color:hsla(0, 100%, 30%, 0.3) ;
+}
+</style>
+<link rel="stylesheet" href="{% static 'css/demo.css' %}">
+<div class="row">
+  <img src="{% static 'images/i.jpg' %}" alt="Nature" onclick="myFunction(this);">
+{%endblock%}
+</body>
+</html>

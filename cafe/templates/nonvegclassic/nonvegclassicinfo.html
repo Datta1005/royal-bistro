@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Classic Pizza</title>
+
+</head>
+<body>
+<nav class="navbar" style="background-color: #e3f2fd;">
+<h1 align="center"> Prize list </h1>
+{% if NonvegClassicPizza_list %}
+<table border="2px" align="center">
+    <thead>
+<th> Pizza</th>
+<th> Small</th>
+<th> Medium</th>
+<th> Large </th>
+    </thead>
+{% for Classic in NonvegClassicPizza_list %}
+<tr>
+    <td>{{Classic.Pizza}}</td>
+    <td>{{Classic.Small}}</td>
+    <td>{{Classic.Medium}}</td>
+    <td>{{Classic.Large}}</td>
+
+</tr>
+{% endfor %}
+</table>
+{%else%}
+{%endif%}
+</body>
+</html>
